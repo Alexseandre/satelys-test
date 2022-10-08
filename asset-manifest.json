@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/satelys-test/static/css/main.f15800ec.css",
+    "main.js": "/satelys-test/static/js/main.0f2e18e2.js",
+    "static/media/Poele.mp4": "/satelys-test/static/media/Poele.0cf37be2004e6bce1c79.mp4",
+    "static/media/videoPhotovolta.mp4": "/satelys-test/static/media/videoPhotovolta.ebde6056935424af468d.mp4",
+    "static/media/videoPmpaa.mp4": "/satelys-test/static/media/videoPmpaa.259f28713656d521dd73.mp4",
+    "static/media/videoPmpae.mp4": "/satelys-test/static/media/videoPmpae.9c19967610329b69776b.mp4",
+    "static/media/videoIsolation.mp4": "/satelys-test/static/media/videoIsolation.2b06fed97029240b9b2a.mp4",
+    "static/media/videoChauffe.mp4": "/satelys-test/static/media/videoChauffe.16f699883f7d5bb33a9c.mp4",
+    "static/media/Satelys_video3.mp4": "/satelys-test/static/media/Satelys_video3.046de15e9289e756847d.mp4",
+    "static/media/contact.png": "/satelys-test/static/media/contact.7bb076d8b4fa2a034df0.png",
+    "static/media/en-savoir-plus-sur-linstallation-dun-systeme-aerovoltaique.jpeg": "/satelys-test/static/media/en-savoir-plus-sur-linstallation-dun-systeme-aerovoltaique.200fc53be4b40708b201.jpeg",
+    "static/media/iso9001.png": "/satelys-test/static/media/iso9001.3f13faa9d0944ba6dfa4.png",
+    "index.html": "/satelys-test/index.html",
+    "main.f15800ec.css.map": "/satelys-test/static/css/main.f15800ec.css.map",
+    "main.0f2e18e2.js.map": "/satelys-test/static/js/main.0f2e18e2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f15800ec.css",
+    "static/js/main.0f2e18e2.js"
+  ]
+}
