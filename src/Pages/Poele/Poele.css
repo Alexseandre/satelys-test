@@ -1,0 +1,150 @@
+.video_titlePoele video{
+    display: flex;
+    width: 100%;
+    margin-top: -100px;
+    height: 400px;
+    object-fit: cover;
+    filter: brightness(1.5);
+}
+
+.video_titlePoele{
+    display: flex;
+    width: 100%;
+}
+
+.titlePoele{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 120px;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+}
+
+.titlePoele h1{
+    font-size: 3em;
+    color: whitesmoke;
+    text-shadow: black 1px 1px 15px ;
+    margin-bottom: 30px;
+    letter-spacing: 5px;    
+}
+.titlePoele h2{
+    font-size: 1em;
+    color: whitesmoke;
+    text-shadow: black 1px 1px 10px ;
+    letter-spacing: 5px;
+}
+
+/* DESCRIPTION */
+
+.descriptionPoele {
+    background: linear-gradient(to left, whitesmoke, white 50%, whitesmoke 90%);
+    display: flex;
+    padding: 25px;
+    line-height: 1.5em;
+}
+
+.descriptionPoele span {
+    color: rgb(255, 123, 0);
+
+}
+
+.descriptionPoele h3{
+    letter-spacing: 5px;
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+.img_descriptionPoele{
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.img_descriptionPoele img{
+    margin: 10px;
+    width: 90%;
+    height: 40%;
+    object-fit: cover;
+}
+
+.descriptionPoele h4{
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+
+.descriptionPoele p{
+    width: 80%;
+    
+}
+
+/* /////////////////////// ICON //////////////////// */
+
+#iconPoele{
+    color: rgb(255, 123, 0); ;
+}
+
+.iconPoele span{
+    color: rgb(255, 123, 0); ;
+}
+
+
+/* /////////////////////// schema //////////////////// */
+
+.PoeleSchema{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.PoeleSchema h2{
+    padding-bottom: 40px;
+    letter-spacing: 5px;
+    font-weight: 400;
+}
+
+.PoeleSchema img{
+    width: 80%;
+}
+
+/* /////////////////////// puissance //////////////////// */
+
+
+.PoelePuissance{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to left, whitesmoke, white 50%, whitesmoke 90%);
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.PoelePuissance h2{
+    padding-bottom: 40px;
+    letter-spacing: 5px;
+    font-weight: 400;
+}
+
+.PoelePuissance img{
+    width: 80%;
+}
+ 
+
+@media(max-width: 880px) {
+    .video_titlePoele > video {
+        display: none;
+    } 
+    .titlePoele  {
+        position: inherit;
+        box-shadow: none;
+        text-align: center;
+    }
+}

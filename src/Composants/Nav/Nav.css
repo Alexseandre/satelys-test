@@ -1,0 +1,215 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.img-nav {
+    width: 150px;
+}
+header {
+    position: fixed;
+    top:  0;
+    left: 0;
+    right: 0;
+    background-color: rgb(242, 242, 242, 0.9);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1); 
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+header .logo {
+    font-weight: bolder;
+    font-size: 25px;
+    color: grey;
+}
+header .navbar ul li{
+position: relative;
+float: left;
+}
+header .navbar ul li a{
+font-size: 1.2rem;
+padding: 20px;
+color: #333;
+display: inline-block;
+position: relative;
+}
+
+header .navbar ul li a:after {
+    content: '';
+    position: absolute;
+    width: 90%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 10px;
+    left: 0;
+    background-color: #7BC300;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+header .navbar ul li a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+header .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    top:55px;
+    width: 200px;
+    background: white;
+    display: none;
+}
+header .navbar ul li ul li {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, .1) ;
+}
+
+header .navbar ul li:hover > ul {
+    display: initial;
+}
+.burger-try {
+    display: none;
+    position: relative;
+    top: 10px;
+    cursor: pointer;
+}
+header label {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+}
+.Isactive {
+   font-weight: bolder;
+}
+
+/* ****************Media query*********************/
+@media(max-width: 1030px) {
+    #menu-bar {
+        display: none;
+    }
+    .burgs {
+        width: 50px;
+        height: 5px;
+        display: inline-block;
+        background-color: #7BC300;
+    }
+    .burgs::after {
+        content: '';
+        width: 50px;
+        height: 5px;
+        display: inline-block;
+        position: relative;
+        top: -5px;
+        background-color: #7BC300;
+    }
+   
+    .burgs::before {
+        content: '';
+        width: 50px;
+        height: 5px;
+        display: inline-block;
+        position: relative;
+        bottom: 0;
+        background-color: #7BC300;
+    }
+    .burgs-open::after {
+        content: '';
+        width: 50px;
+        height: 5px;
+        display: inline-block;
+        position: relative;
+        top: -20px;
+        animation: rotate140 .5s forwards;
+        background-color: #7BC300;
+    }
+    .burgs-open {
+      background: transparent;
+      width: 50px;
+      height: 5px;
+      display: inline-block;
+ 
+      height: 100%;
+    }
+    .burgs-open::before {
+        content: '';
+        width: 50px;
+        animation: rotate40 .5s forwards;
+        height: 5px;
+        display: inline-block;
+        position: relative;
+        bottom: 0;
+        background-color: #7BC300;
+    } 
+ 
+
+    .burger-try{
+        display: initial;
+    }
+    header .navbar ul li a{
+     display: block;
+     position: initial;
+        }
+        header .navbar ul li ul {
+            top:0;
+        }
+    header label{
+        display: initial;
+    }header .navbar ul li:focus-within > ul {
+        display: initial;
+    }
+    header .navbar ul li a:hover {
+        background-color: #333;
+        color: white;
+    }
+    header .navbar ul li > a::after {
+       display: none;
+    }
+    header .navbar {
+    position: absolute;
+     top: 100%;
+     left: 0;
+     right: 0;
+     background: white;
+     border-top: 1px solid rgba(0, 0, 0, .1);
+    }
+    .navbar-close {
+        display: none;
+    }
+    header .navbar ul li{
+      width: 100%;
+        }
+    header .navbar ul li ul
+   {
+     position: relative;
+     width: 100%;
+     }
+     header .navbar ul li ul li
+     {
+       background: #eee;
+       }
+    
+}
+
+
+/* *************************Animation************** */
+@keyframes rotate140 {
+    from {
+      rotate: 0deg;
+    }
+  
+    to {
+        rotate: 140deg;
+    }
+  }
+  @keyframes rotate40 {
+    from {
+      rotate: 0deg;
+    }
+  
+    to {
+        rotate: 40deg;
+    }
+  }

@@ -1,0 +1,51 @@
+.qualifications h2{
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.qualifications p{
+    font-weight: 500;
+}
+
+.rge, .assurance{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.rge img,.qualibat img, .assurance img{
+    height: 100%;
+    width: 30%;
+    padding-left: 5%;
+}
+
+.qualifications .text{
+    width: 60%;
+}
+
+.qualibat{
+    justify-content: center;
+    color: white;
+    display: flex;
+    margin-top: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: rgb(28, 29, 31);
+}
+
+.qualibat img{
+    padding-right: 5%;
+    margin-left: -10%;
+}
+
+.assurance{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: linear-gradient(white 60%, rgb(241, 241, 242));
+}

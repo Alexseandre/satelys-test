@@ -1,0 +1,6 @@
+.coordonnees{
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+}

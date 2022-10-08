@@ -1,0 +1,27 @@
+
+/* DESCRIPTION */
+.otro {
+    background: rgb(52, 51, 51);
+    display: flex;
+    padding: 25px;
+    line-height: 1.5em;
+    color: white;
+    font-size: 1.5rem;
+ 
+}
+
+.otro h3{
+    letter-spacing: 5px;
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+.otro h4{
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+
+.otro p{
+    width: 80%;
+}
+

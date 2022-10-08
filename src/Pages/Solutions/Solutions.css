@@ -1,0 +1,174 @@
+.solutions{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    padding-bottom: 50px;
+    background: linear-gradient(whitesmoke 70%, rgb(224, 224, 224)) ;
+}
+
+.solutions span{
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_solution{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+}
+
+.high{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.title{
+    margin-top: 0px;
+    display: flex;
+    width: 100%;
+    font-size: 3em;
+    font-weight: 700;
+    background: url(https://wallpaperaccess.com/full/1349251.jpg);
+    background-size: cover;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1{
+    opacity: 1;
+    text-shadow: rgb(43, 43, 43) 1px 1px 1px;
+}
+
+.title img{
+    height: 60px;
+    width: 60px;
+    margin-right: 10px;
+}
+
+
+.high h2, .high p{
+    margin-top: 20px;
+    padding-left: 120px;
+    padding-right: 120px;
+    
+}
+
+
+.fenetre{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+    width: 30%;
+    margin: 1.5%;
+    margin-bottom: 5%;
+    transition: 1s;
+    padding: 5px;
+    border-radius: 5px ;
+}
+
+
+.fenetre img{
+    border-top-left-radius: 10px ;
+    border-top-right-radius: 10px ;
+    height: 50%;
+    width: 100%;
+    object-fit: fill;
+    margin-bottom: 5%;
+}
+
+.solutions h3{
+    box-shadow: 0px 1px 10px black;
+    text-align: center;
+    border:none;
+    background-color: rgb(43, 43, 43);
+    padding: 10px;
+    width: 80%;
+    margin: 10px;
+    color: white;
+    font-size: 1.05em;
+    font-weight: 400;
+}
+.description_solutions{
+    display: flex;
+    flex-direction: row;
+}
+.fenetre p{
+    font-weight: 200;
+    text-align: center;
+    line-height: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.savoir{
+    position: absolute;
+    font-size: .9em;
+    transition: 1s;
+    font-weight: 400;
+    font-display: flex;
+    color: rgba(28, 29, 31, 0);
+    padding: 15px;
+    border-radius: 15px;
+
+}
+
+.image_solutions_img{
+    transition: 1s;
+}
+
+.image_solutions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+
+}
+
+.image_solutions:hover .savoir{
+    color:  rgb(255, 255, 255);
+    background-color: rgb(43, 43, 43);
+    transition: 1s;
+    z-index: 1;
+}
+
+.image_solutions:hover .image_solutions_img{
+    filter: brightness(0.5);
+    z-index: 0;
+    transition: 1s;
+}
+
+@media(max-width: 1030px) { 
+
+    .section_solution{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+.fenetre{
+    width: 60%;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15%;
+    background-color: white;
+    border-radius: 15px;
+}
+
+}

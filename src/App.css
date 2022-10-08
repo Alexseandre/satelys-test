@@ -1,0 +1,67 @@
+html, body
+ {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+
+	vertical-align: baseline;
+}
+.green {
+	color: green;
+	font-weight: bolder;
+	font-size: 1.6rem;
+}
+* {
+	font-family: 'Mulish' ,Arial, Helvetica, sans-serif;
+}
+a {
+	text-decoration: none;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+main {
+	margin-top: 83px;
+}
+
+@media(max-width: 880px) {
+.video_title {
+	display: none;
+}
+.title_photovolatique {
+	position: inherit;
+	font-size: 0.7rem;
+	padding: 15px;
+	margin: 0;
+}
+.title_photovolatique h2 {
+
+	font-size: 0.3rem;
+	line-height: normal;
+	font-weight: bolder;
+
+}
+.block-video > video {
+	display: none;
+}
+
+.container-text {
+	text-align: center;
+}
+}

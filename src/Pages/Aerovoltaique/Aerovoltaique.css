@@ -1,0 +1,174 @@
+.img_title img{
+    display: flex;
+    width: 100%;
+    margin-top: -100px;
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
+    filter: opacity(.5);
+}
+
+.img_title{
+    display: flex;
+    width: 100%;
+}
+
+/* JAUGE */
+
+.jauge {
+    background-color: rgba(151, 151, 151, 0.175);
+    margin-top: 10px;
+}
+
+.jauge_aerovolta, .jauge_photovol {
+    background-color: #7BC300;
+    color: white;
+    padding-right: 2px;
+    text-align: right;
+    font-size: 10px;
+}
+
+.jauge_vide{
+    width: 0%;
+}
+
+.jauge_aerovolta{
+    width: 0%;
+    
+    animation: jauge80 1.5s ease-in-out forwards;
+}
+
+.jauge_photovol{
+    width: 0%;
+    
+    animation: jauge20 1.5s ease-in-out forwards;
+}
+
+
+@keyframes jauge80{
+    to{width:80%;}
+}
+
+@keyframes jauge20{
+    to{width:20%;}
+}
+
+/* SCHEMA */
+
+.schema{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    box-shadow: inset lightblue 0px 0px 20px 10px;
+    position: relative;
+}
+
+
+.schema img{
+    height: 300px;
+    width: 700px;
+    
+}
+
+.pastille{
+    font-size: .9em;
+    color: whitesmoke;
+    padding: 10px;
+    background-color: #7BC300;
+    border-radius: 100%;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pulse-black 2.5s infinite;
+}
+
+.n1{
+    position: absolute;
+    top: 120px;
+    left: 100px;
+}
+
+.cachen1{
+    position: absolute;
+    bottom: 40px;
+    transition: 1s;
+    opacity: 0;
+}
+
+.n2{
+    position: absolute;
+    top: 150px;
+    left: 290px;
+}
+
+.cachen2{
+    position: absolute;
+    top: 40px;
+    left: 290px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.n3{
+    position: absolute;
+    top: 250px;
+    left: 200px;
+}
+
+.cachen3{
+    position: absolute;
+    bottom: 10px;
+    left: 320px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.cache{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    width: 250px;
+    
+}
+
+.cache span{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.img_schema{
+    position: relative;
+}
+
+.n1:hover + .cachen1{
+    opacity: 1;
+}
+.n2:hover + .cachen2{
+    opacity: 2;
+}
+.n3:hover + .cachen3{
+    opacity: 3;
+}
+
+@keyframes pulse-black {
+    0% {
+        transform: scale(0.99);
+        box-shadow: 0 0 0 0 #7cc300a4;
+    }
+    
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px #7cc30017;
+    }
+    
+    100% {
+        transform: scale(0.99);
+        box-shadow: 0 0 0 0 #7cc3000c;
+    }
+}

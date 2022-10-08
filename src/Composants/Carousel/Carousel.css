@@ -1,0 +1,71 @@
+.carousel .overlay {
+    width: 100%;  
+    position: absolute;
+    top: 0%;
+    height: 100%;
+    padding: 0,4rem 1.5rem;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    }
+    .container-carousel {
+        padding-top: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to top, white 30%, whitesmoke 70% );
+      }
+    .overlay-title {
+        padding: 30px;
+        font-size: 2rem;
+    }
+    .carousel {
+        border-radius: 20px;
+    }
+    .container-carousel h3 {
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+    .overlay-text { 
+        display: flex;
+        font-size: 1.1rem;
+        font-weight: lighter;
+        text-align: center;
+        padding: 15px;
+        font-style: italic;
+    }
+    .carousel .thumbs {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0px;
+    }
+    .carousel .thumb {
+        cursor: pointer;
+    }
+    .carousel-root {
+        max-width: 1200px;
+    }
+
+@media screen and (max-width:600px) {
+    .carousel .slide .img {
+        width: 100vw !important;
+        height: 40vh;
+        object-fit: cover;
+    }
+}
+
+  
+
+
+/* ******************Animation**************** */
+
+ 

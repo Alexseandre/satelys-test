@@ -1,0 +1,214 @@
+.video_title video{
+    display: flex;
+    width: 100%;
+    margin-top: -100px;
+    height: 400px;
+    object-fit: cover;
+    filter: opacity(.5);
+}
+
+.video_title{
+    display: flex;
+    width: 100%;
+}
+
+
+.title_photovolatique{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 120px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+}
+
+
+.title_photovolatique h1{
+    font-size: 3em;
+    color: black;
+    margin-bottom: 30px;
+    letter-spacing: 5px;    
+}
+
+.title_photovolatique h2{
+    font-size: 1em;
+    color: black;
+    letter-spacing: 5px;
+}
+
+/* DESCRIPTION */
+
+.description_photovolatique {
+    background: linear-gradient(to left, whitesmoke, white 50%, whitesmoke 90%);
+    display: flex;
+    padding: 25px;
+    line-height: 1.5em;
+}
+
+.description_photovolatique h3{
+    letter-spacing: 5px;
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+.img_description_photovolta{
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.img_description_photovolta img{
+    margin: 10px;
+    width: 90%;
+    height: 40%;
+    object-fit: cover;
+}
+
+.description_photovolatique h4{
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+
+.description_photovolatique p{
+    width: 80%;
+    
+}
+
+/* ICON */
+
+.icon-block{
+    display: flex;
+    justify-content: space-around;
+    align-items:  flex-start;
+    padding: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    box-shadow: rgb(107 219 219 / 20%) 0px 10px 20px 6px;
+    /* background: linear-gradient(to left, whitesmoke, white 50%, whitesmoke 90%); */
+}
+
+.icon-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5em;
+    width: 30%;
+}
+
+.icon-content h4{
+    font-size: 3vh;
+    font-weight: 600;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+.icon-content p {
+    font-weight: 300;
+    text-align: center;
+}
+
+.icon1,.icon2,.icon3{
+    font-size: 5vh;
+    font-weight: lighter;
+    color: #7BC300;
+    margin-bottom: 25px;
+}
+
+.icon1{
+    stroke-dasharray: 1700px;
+    stroke-dashoffset: 1700px;
+    animation: anim 3.5s  forwards;
+}
+.icon2{
+    stroke-dasharray: 2000px;
+    stroke-dashoffset: 2000px;
+    animation: anim 3s  forwards;
+}
+.icon3{
+    stroke-dasharray: 3000px;
+    stroke-dashoffset: 3000px;
+    animation: anim 9s  forwards;
+}
+
+
+
+@keyframes anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* CARACTERISTIQUES */
+
+.caract-block{
+    display: flex;
+    justify-content: space-around;
+    align-items:  flex-start;
+    padding: 50px;
+    background: linear-gradient(to left, whitesmoke, white 50%, whitesmoke 90%);
+}
+
+.caract-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5em;
+    width: 30%;
+}
+
+.caract-content h4{
+    font-size: 3vh;
+    font-weight: 600;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+.caract-content p {
+    font-weight: 300;
+    text-align: start;
+}
+
+.caract-content img{
+    width: 27.5vh;
+    height: 15vh;
+    margin-bottom: 20px;
+}
+
+@media(max-width: 1030px) { 
+
+
+    .icon-block{
+        flex-direction: column;
+        align-items:  center;
+    }
+    
+    .icon-content{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+
+
+
+    .caract-block{
+        flex-direction: column;
+        align-items:  center;
+    }
+
+    .caract-content{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+}

@@ -1,0 +1,76 @@
+.block-caract {
+    background: whitesmoke;
+    padding-top: 40px; 
+    padding-bottom: 40px; 
+}
+
+.block-caract {
+    background: whitesmoke;
+    padding-top: 40px; 
+    padding-bottom: 40px; 
+}
+.img-cara {
+    display: flex;
+}
+.img-cara img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+     
+.container1-caract {
+    display: flex;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+}
+.container-text-caract {
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+.container-text-caract h2{
+    font-size: 2rem;
+    color: #7BC300;
+}
+.container-5 h2 {
+    font-size: 2rem;
+    color: #7BC300;
+}
+.container-avantage {
+    display: flex;
+    line-height: 1.4;
+    justify-content: space-around;
+}
+.text-avantage {
+    padding: 15px;
+    display: flex;
+    font-size: 1.2rem;
+}
+.text-avantage h2 {
+  padding: 15px;
+}
+.container-5 {
+    padding: 15px;
+}
+.img_description_photovolta img {
+    object-fit: contain;
+    width: 100%;
+}
+
+@media(max-width: 1030px) { 
+    .container1-caract {
+        flex-direction: column;
+    }
+    .container-avantage {
+        flex-direction: column;
+    }
+    .description_photovolatique {
+        flex-direction: column;
+ 
+        margin: 0;
+    }
+    .img_description_photovolta  {
+       display: none;
+    }
+  }
+  
